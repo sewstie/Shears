@@ -12,6 +12,10 @@
 }
 
 @media (max-width:768px){
+    .about-us-inner{margin-bottom: min(1vh ,3rem);}
     .about-us-image{width: 80%; height: auto;}
+    .about-us-text.about-us-underline {text-align: left;}
+    
     .joind_us-image{width: 80%; height: auto;}
+    .join-us__content-text{text-align: left;}
 }
