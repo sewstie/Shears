@@ -1,10 +1,10 @@
 /*     our-team      */
 
 .our-team-title{
-    margin-top: 75px;
-    margin-bottom: 20px;
+    margin-top: min(7vh ,4.7rem);
+    margin-bottom: min(2vh ,1.25rem);
     color: #000000;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 62px;
     text-align: center;
@@ -12,13 +12,13 @@
 
 .our-team-text{
     color: #000000;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 26px;
     text-align: center;
 }
 
 .our-team__content{
-    margin-top: 40px;
+    margin-top: min(3vh ,2.25rem);
     display: flex;
     justify-content: space-between;
 }
@@ -34,7 +34,7 @@
 .our-team__content-name{
     margin-top: 20px;
     color: #000000;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 600;
     line-height: 26px;
     text-align: center;   
@@ -47,7 +47,7 @@
     justify-content: space-between;
     background-color: #f0f0f0;
     border-radius: 12px;
-    margin-top: 80px;
+    margin-top: min(10vh, 5rem);
 }
 
 .join-us__content{
@@ -60,7 +60,7 @@
 
 .join-us__content-title{
     color: #030303;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 62px;
 }
@@ -68,7 +68,7 @@
 .join-us__content-text{
     margin-bottom: 10px;
     color: #030303;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 26px;
 }
 
@@ -81,7 +81,7 @@
     border-radius: 12px;
     background-color: #000000;
     color: #ffffff;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 21px;
     text-decoration: none;
