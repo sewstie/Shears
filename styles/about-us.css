@@ -8,7 +8,7 @@
 .about-us-title{
     margin: 20px 0;
     color: #000000;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 600;
     text-align: center;
 }
@@ -16,7 +16,7 @@
 .about-us-text{
     margin: 0 auto;
     color: #000000;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     text-align: center;
     width: 60%;
     line-height: 26px;
@@ -59,7 +59,7 @@
 
 .join-us__content-text{
     color: #000000;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 62px;
 }
@@ -73,7 +73,7 @@
     border-radius: 2px;
     background-color: #000000;
     color: #ffffff;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-family: "Roboto";
     font-weight: 700;
     line-height: 26px;
