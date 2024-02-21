@@ -2,7 +2,7 @@
 
 .info-inner{
     display: flex;
-    padding-top: 20px;
+    padding-top: min(1vh, 1.25rem);
     justify-content: space-between;
 }
 
@@ -13,22 +13,22 @@
 }
 
 .info__content-title{
-  margin-top: 145px;
+  margin-top: min(14vh, 9.05rem);
   color: #374151;
-  font-size: 3.75em;
+  font-size: 3.75rem;
   font-family: "Roboto";
   font-weight: 700;
 }
 
 .info__content-text{
-  margin-top: 28px;
+  margin-top: min(15vh, 1.75rem);
   color: #000000;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-family: "Roboto";
 }
 
 .info__content-list{
-    margin-top: 59px;
+    margin-top: min(10vh , 3.7rem);
     display: flex;
     justify-content: space-between;
 }
@@ -40,7 +40,7 @@
     border-radius: 2px;
     background-color: #000000;
     color: #ffffff;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-family: "Roboto";
     font-weight: 700;
     text-decoration: none;
@@ -54,8 +54,8 @@
     background-color: #424242;
 }
 
-.content-btn-1{width: 261px;}
-.content-btn-2{width: 203px;}
+.content-btn-1{width: 54.37%;}
+.content-btn-2{width: 42.29%;}
 
 .info-image{
     width: 512px;
@@ -63,12 +63,17 @@
     border-radius: 2px;
 }
 
+@media screen and (max-height:450px) {
+    .info-image{ }
+    .info-inner{justify-content: center; gap: 15%;}
+}
+
 /**         tips          */
 
 .tips__content{
     display: flex;
     gap: 10%;
-    margin-top: 75px;
+    margin-top: min(5vh ,4.7rem);
 }
 
 .tips__content:nth-child(2),
@@ -92,7 +97,7 @@
 .tips__content__block{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: min(5vh, 1.25rem);
 }
 
 .tips__content__block-title{
@@ -117,22 +122,22 @@
 /*          reviews            */
 
 .reviews{
-    margin-top: 75px;
+    margin-top: min(7vh, 4.7rem);
 }
 
 .reviews-title{
     color: #000000;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 600;
     text-align: center;
 }
 
 .reviews-text{
     color: #000000;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: min(7vh, 3.125rem);
 }
 
 .reviews__content{
@@ -154,7 +159,7 @@
     margin: 0 auto;
     width: 80%;
     color: #030303;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
     line-height: 26px;

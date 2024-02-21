@@ -1,4 +1,4 @@
-body{
+html{
     font-size: 16px;
     font-family: "Poppins";
 }
@@ -31,10 +31,45 @@ button{
 
 .header__menu{
     width: 33%;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: "Roboto";
     font-weight: 500;
     
+}
+
+.header__menu-burger{
+    width: 30px;
+    height: 22px;
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+.header__menu-burger::before{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+}
+.header__menu-burger::after{
+    position: absolute;
+    content:"";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+}
+.header__menu-burger span{
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+    height: 2px;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 .header__menu-list{
@@ -150,7 +185,7 @@ button{
     border-radius: 2px;
     background-color: #000000;
     color: #ffffff;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-family: "Roboto";
     font-weight: 700;
     text-decoration: none;
@@ -169,12 +204,12 @@ button{
 .footer{
     border-top: 1px solid #f0f0f0;
     box-sizing: border-box;
-    margin-top: 60px;
-    padding-bottom: 36px;
+    margin-top: min(6vh, 3.75rem) ;
+    padding-bottom: min(20vh, 2rem);
 }
 
 .footer-inner{
-    padding-top: 16px;
+    padding-top: min(5vh, 1rem);
     display: flex;
     justify-content: space-between;
 }
@@ -187,18 +222,18 @@ button{
 
 .footer__content-title{
     color: #000000;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
 .footer__content:nth-of-type(2) .footer__content-title {
-    font-size: 0.75em;
+    font-size: 0.75rem;
     text-align: right;
 }
 
 .footer__content-text{
     color: #000000;
-    font-size: 0.85em;
+    font-size: 0.85rem;
     font-weight: 300;
     text-decoration: none;
 }
@@ -208,11 +243,11 @@ button{
 }
 
 .footer__content:first-child .footer__content-text:last-child {
-    margin-top: 34px;
+    margin-top: min(9vh, 2rem);
 }
 
 .footer__content:nth-of-type(2) ul {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: min(1.25vh, 0.5rem);
 }

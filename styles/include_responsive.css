@@ -1,0 +1,17 @@
+@media (max-width:1230px) {
+    .container{max-width: 984px;}
+}
+
+@media (max-width:1024px) {
+    .container{max-width: 728px;}
+}
+
+@media (max-width:768px) {
+    .container{max-width: none; padding: 0 0;}
+    html{font-size: 14px;}
+    
+    .footer-inner{padding-inline: 15px; padding-top: min(5vh, 1rem);}
+    .footer__content:last-child{display: none}
+    .footer__content{margin: 0 auto; align-items: center;}
+    .footer__content-text{text-align: center}
+}
