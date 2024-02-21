@@ -1,9 +1,16 @@
 @media (max-width:1230px) {
     .container{max-width: 984px;}
+    .header__menu{font-size: 0.9rem;}
 }
 
 @media (max-width:1024px) {
     .container{max-width: 728px;}
+    .header__menu-burger{display: block;}
+    .header__menu-list{display: none;}
+    .header__content-btn{display: none;}
+    .header-inner{justify-content: space-around;}
+    .header__content{display: none;}
+
 }
 
 @media (max-width:768px) {

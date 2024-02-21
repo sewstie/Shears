@@ -1,14 +1,7 @@
 @media (max-width:1230px){
-    .header__menu{font-size: 0.9rem;}
 }
   
 @media (max-width:1024px){
-    .header__menu-burger{display: block;}
-    .header__menu-list{display: none;}
-    .header__content-btn{display: none;}
-    .header-inner{justify-content: space-around;}
-    .header__content{display: none;}
-
     .info-inner{flex-direction: column; align-items: center; gap: 1vh;}
     .info__content-title{font-size: 3.5rem;}
     .info__content{width: 60%;}
