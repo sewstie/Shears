@@ -11,6 +11,7 @@
     .contact-inner{flex-direction: column; gap: min(4vh, 2rem);}
     .contact__block{width: 100%;}
     .contact__form{width: 100%;}
+    .contact__block__info{height: auto;}
 }
 
 @media (max-width:768px){

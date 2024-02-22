@@ -1,26 +1,38 @@
 @media (max-width:1230px) {
     .container{max-width: 984px;}
-
-    .header__menu{font-size: 0.9rem;}
+    .header__menu{width: 38%;}
+    .header__content{width: 38%;}
+    .header__content-social{gap: 14%;}
 }
 
 @media (max-width:1024px) {
     .container{max-width: 728px;}
 
+    .header{position: sticky; top: 0; left: 0; width: 100%; z-index: 99; background-color: #fff;}
+    .header-logo{position: relative; z-index: 99;}
+    .header-inner{justify-content: space-between; padding: 0 25px;}
+    .header__menu{width: auto;}
     .header__menu-burger{display: block;}
+    .header__menu-list-mobile{display: block;}
     .header__menu-list{display: none;}
     .header__content-btn{display: none;}
     .header__content{display: none;}
+    .header__menu-link:not(:last-child){ margin-right: auto; }
+    .header__menu-link{border-radius: 6px; margin: 0 auto; max-width: 25.5rem; display: block; text-align: center; margin-bottom: 1rem; padding: 1rem 1.5rem; background-color: azure; }
+    .header__menu-link:hover{text-decoration: none; background-color: #dddddd;}
+    .header__content-social{display: flex; z-index: 99; justify-content: center; margin-top: 7vh;}
+    .header__content-social a{padding: 7px 7px; border-radius: 12px; background-color: #fff;}
+
 }
 
 @media (max-width:768px) {
     .container{max-width: none; padding: 0 0;}
     html{font-size: 14px;}
 
-    .header-inner{justify-content: space-around;}
     
     .footer-inner{padding-inline: 15px; padding-top: min(5vh, 1rem);}
     .footer__content:last-child{display: none}
     .footer__content{margin: 0 auto; align-items: center;}
     .footer__content-text{text-align: center}
+    .header__menu-link{max-width: 15.5rem;}
 }
