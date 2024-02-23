@@ -9,7 +9,7 @@
     .container{max-width: 728px;}
 
     .header{position: sticky; top: 0; left: 0; width: 100%; z-index: 99; background-color: #fff;}
-    .header-logo{position: relative; z-index: 99;}
+    .header-logo{position: relative; z-index: none;}
     .header-inner{justify-content: space-between; padding: 0 25px;}
     .header__menu{width: auto;}
     .header__menu-burger{display: block;}
@@ -19,7 +19,7 @@
     .header__content-btn{display: none;}
     .header__content{display: none;}
     .header__menu-link:not(:last-child){ margin-right: auto; }
-    .header__menu-link{ border-radius: 6px; max-width: 25.5rem; display: block; text-align: center; margin-bottom: 1rem; padding: 1rem 1.5rem; font-weight: bold; font-size: 1.5rem }
+    .header__menu-link{ border-radius: 6px; max-width: 75%; display: block; text-align: right; margin-bottom: 1rem; padding: 1rem 1.5rem; font-weight: bold; font-size: 1.5rem; }
     .header__content-social{display: flex; z-index: 99; justify-content: right; margin-top: 7vh; margin-right: 15px;}
     .header__content-social a{padding: 7px 7px; border-radius: 12px; background-color: #fff;}
     .header__menu-burger-cover.active{ display: block; }
@@ -30,14 +30,15 @@
     .container{max-width: none; padding: 0 0;}
     html{font-size: 14px;}
 
-    
+    .header__menu-link{max-width: 15.5rem; margin: 0 auto; text-align: center;}
+    .header__menu-burger-cover.active{ display: none; }
+    .header__menu-list-mobile{bottom: 100%; top: auto; right: 0;}
+    .header__menu-list-mobile.active{ bottom: -30%; right: 0;}
+    .header__content-social{justify-content: center; margin-left: 0;}
+    .header-logo{z-index: 99;}
+
     .footer-inner{padding-inline: 15px; padding-top: min(5vh, 1rem);}
     .footer__content:last-child{display: none}
     .footer__content{margin: 0 auto; align-items: center;}
     .footer__content-text{text-align: center}
-    .header__menu-link{max-width: 15.5rem; margin: 0 auto;}
-    .header__menu-burger-cover.active{ display: none; }
-    .header__menu-list-mobile{bottom: 100%; top: auto; right: 0;}
-    .header__menu-list-mobile.active{ bottom: -30%; right: 0; ;}
-    .header__content-social{justify-content: center; margin-left: 0;}
 }
