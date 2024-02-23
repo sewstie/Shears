@@ -102,9 +102,9 @@
                         </div>
                         <iframe class="contact__info-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d332.7397473851913!2d11.575831714935418!3d48.15038648288551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e750b2989753b%3A0xad89e0a1a72fe38a!2sLuminovo%20GmbH!5e0!3m2!1sru!2sat!4v1704919890157!5m2!1sru!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <form class="contact__form">
-                        <div class="contact_form-inner">
-                            <div class="contact__form-title">Send Us a Message</div>
+                    <div class="contact__form" >
+                        <form class="contact_form-inner">
+                            <h3 class="contact__form-title">Send Us a Message</h3>
                             <div class="contact__form-block">
                                 <div>
                                     <div class="contact__form-label" for="Name">First Name</div>
@@ -120,8 +120,8 @@
                             <div class="contact__form-label" for="message">Message</div>
                             <textarea type="text" class="contact__form-input input-message" id='message' placeholder="Type Your Message" required></textarea>
                             <div class="contact-btn">Send</div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -148,6 +148,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./js/script.js"></script>
+    <script src="/js/contact.js"></script>
 </body>
 </html>
