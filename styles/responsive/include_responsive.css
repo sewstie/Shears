@@ -20,8 +20,9 @@
     .header__content{display: none;}
     .header__menu-link:not(:last-child){ margin-right: auto; }
     .header__menu-link:hover{text-decoration: none;}
-    .header__menu-link{ border-radius: 6px; max-width: 15.5rem;  text-align: center; display: block; margin-left: 27rem; margin-bottom: 1rem; padding: 1rem 1.5rem; font-weight: bold; font-size: 1.5rem; }
+    .header__menu-link{text-align: right; display: block; font-weight: bold; font-size: 1.5rem; margin-bottom: 1rem; padding: 1rem 0.9rem;  }
     .header__content-social{display: flex; z-index: 99; justify-content: right; margin-top: 7vh; margin-right: 15px;}
+    .header__menu-link:not(:last-child){margin: auto; margin-right: 20%;}
     .header__content-social a{padding: 7px 7px; border-radius: 12px; background-color: #fff;}
     .header__menu-burger-cover.active{ display: block; }
 
@@ -31,7 +32,8 @@
     .container{max-width: none; padding: 0 0;}
     html{font-size: 14px;}
 
-    .header__menu-link{max-width: 15.5rem; margin: 0 auto;}
+    .header__menu-link{max-width: 15.5rem; margin: 0 auto; text-align: center;}
+    .header__menu-link:not(:last-child){margin: 0 auto;}
     .header__menu-burger-cover.active{ display: none; }
     .header__menu-list-mobile{bottom: 100%; top: auto; right: 0;}
     .header__menu-list-mobile.active{ bottom: -30%; right: 0;}
