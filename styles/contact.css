@@ -127,6 +127,7 @@
     border: none;
     border-bottom: 1px solid #fff;
     padding-bottom: 10px;
+    font-size: 1.2em;
 }
 
 .contact__form-input.input-name{
@@ -147,7 +148,6 @@
 
 .contact__form-input::placeholder{
     color: #030303;
-    font-size: 1em;
     line-height: 20px;
 }
 

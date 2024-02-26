@@ -12,6 +12,8 @@
     .contact__block{width: 100%;}
     .contact__form{width: 100%;}
     .contact__block__info{height: auto;}
+    .contact__form-input::placeholder{font-size: 18px;}
+    .contact__form-input{font-size: 18px;}
 }
 
 @media (max-width:768px){
