@@ -44,7 +44,7 @@
 .contact__block__info__content__column{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 2rem;
 } 
 
 .info__content{
