@@ -1,29 +1,71 @@
-window.onload = function () {
-    const menu_btn = document.querySelector('.header__menu-burger')
-    const mobile_menu = document.querySelector('.header__menu-list-mobile')
-    const cover = document.querySelector('.header__menu-burger-cover');
+/* Loading screen */
 
-    menu_btn.addEventListener('click', function(){
-        menu_btn.classList.toggle('active');
-        mobile_menu.classList.toggle('active');
-        cover.classList.toggle('active');
+window.onload = function() {
+    gsap.to('.loading-screen', {
+        duration: 1,
+        opacity: 0,
+        onComplete: function() {
+            document.querySelector('.loading-screen').style.display = 'none';
+            locomotiveScroll.update();
+        }
+    });
+};
+
+/* Service animation */
+
+document.querySelectorAll('.services-btn').forEach(button => {
+    const originalText = button.textContent;
+    const originalColor = window.getComputedStyle(button).color;
+
+    button.addEventListener('mouseenter', () => {
+        gsap.to(button, { 
+            duration: 0.3, 
+            color: "#ee4037", 
+            onStart: () => button.textContent = 'Book Now',
+            ease: "power1.out"
+        });
     });
 
-    var contact_btn = document.querySelector('.contact-btn');
-
-    contact_btn.addEventListener('click', function(){
-        var name = document.getElementById('Name').value;
-        var surname = document.getElementById('Surname').value;
-        var email = document.getElementById('email').value;
-        var message = document.getElementById('message').value;
-        var body = 'name: '+name + '<br> surname: '+surname + '<br> email: '+email + '<br> message: '+message;
-       
-        Email.send({
-            SecureToken : "1ae143b5-85a4-4e68-923e-ae1a836a1af5",
-            To : 'gusenovvlad@gmail.com',
-            From : "gusenovvlad@gmail.com",
-            Subject : "New inquiry",
-            Body : body,
-        })
+    button.addEventListener('mouseleave', () => {
+        gsap.to(button, { 
+            duration: 0.3, 
+            color: originalColor, 
+            onStart: () => button.textContent = originalText,
+            ease: "power1.in"
+        });
     });
-}
+});
+
+/* Locomotive Scroll */
+
+gsap.registerPlugin(ScrollTrigger);
+
+const scroller = document.querySelector('#scroller');
+
+const locomotiveScroll = new LocomotiveScroll({
+  el: scroller,    
+  smooth: true,
+  getDirection: true,
+  multiplier: 0.7,
+  smartphone: {
+      smooth: true,
+  },
+  tablet: {
+      smooth: true,
+  },
+});
+
+const anchorLinks = document.querySelectorAll('a[href^=\\#]:not([href$=\\#])');
+
+anchorLinks.forEach((anchorLink) => {
+    let hashval = anchorLink.getAttribute('href');
+    let target = document.querySelector(hashval);
+
+    anchorLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        locomotiveScroll.scrollTo(target);
+        locomotiveScroll.update();
+    });
+});

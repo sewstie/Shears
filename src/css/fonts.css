@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Poppins'), url('../../../public/fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'InkaBSmall';
+    font-style: italic;
+    font-weight: normal;
+    src: local('InkaBSmall'), url('../../../public/fonts/InkaBSmall-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Sequel';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sequel Regular'), url('../../../public/fonts/Sequel_Demo.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GT-America';
+    font-style: normal;
+    font-weight: 500;
+    src: local('GT-America'), url('../../../public/fonts/GT-America-Compressed-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GT-America Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('GT-America'), url('../../../public/fonts/GT-America-Regular.woff') format('woff');
+}

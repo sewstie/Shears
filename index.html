@@ -3,169 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bavarian Shears</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="icon" href="./assets/icons/favicon.ico">
-    <link rel="stylesheet" href="./styles/include.css">
-    <link rel="stylesheet" href="./styles/responsive/include_responsive.css">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/responsive/index_responsive.css">
+    <title>Shear</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./src/css/import.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="icon" href="./src/icons/favicon.ico">
 </head>
-<body>
+<body id="scroller">
     <header class="header">
-        <div class="container">
-            <div class="header-inner">
-                <nav class="header__menu">
-                    <div class="header__menu-burger-cover"></div>
-                    <button class="header__menu-burger">
-                        <div class="bar"></div>
-                    </button>
-                    <nav class="header__menu-list">
-                        <a href="./about-us.html" class="header__menu-link">ABOUT US</a>
-                        <a href="./services.html" class="header__menu-link">SERVICES</a>
-                        <a href="./careers.html" class="header__menu-link">CAREERS</a>
-                        <a href="./contact.html" class="header__menu-link">CONTACT</a>
-                    </nav>
-                    <nav class="header__menu-list-mobile">
-                        <a href="./about-us.html" class="header__menu-link">ABOUT US</a>
-                        <a href="./services.html" class="header__menu-link">SERVICES</a>
-                        <a href="./careers.html" class="header__menu-link">CAREERS</a>
-                        <a href="./contact.html" class="header__menu-link">CONTACT</a>
-                        <div class="header__content-social">
-                            <div>
-                                <a href="https://www.instagram.com/" class="header__content-social-link"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="instagram"><path d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z"></path></svg></a>
-                            </div>
-                            <div>
-                                <a href="https://www.facebook.com/" class="header__content-social-link"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="facebook"><path d="M20.9,2H3.1A1.1,1.1,0,0,0,2,3.1V20.9A1.1,1.1,0,0,0,3.1,22h9.58V14.25h-2.6v-3h2.6V9a3.64,3.64,0,0,1,3.88-4,20.26,20.26,0,0,1,2.33.12v2.7H17.3c-1.26,0-1.5.6-1.5,1.47v1.93h3l-.39,3H15.8V22h5.1A1.1,1.1,0,0,0,22,20.9V3.1A1.1,1.1,0,0,0,20.9,2Z"></path></svg></a>
-                            </div>
-                            <div>
-                                <a href="https://twitter.com/" class="header__content-social-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="twitter"><path d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z"></path></svg></a>
-                            </div>
-                        </div>
-                    </nav>
-                </nav>
-                <a href="index.html" class="header-logo"></a>
-                <div class="header__content">
-                    <div class="header__content-social">
-                        <div>
-                            <a href="https://www.instagram.com/" class="header__content-social-link"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="instagram"><path d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z"></path></svg></a>
-                        </div>
-                        <div>
-                            <a href="https://www.facebook.com/" class="header__content-social-link"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="facebook"><path d="M20.9,2H3.1A1.1,1.1,0,0,0,2,3.1V20.9A1.1,1.1,0,0,0,3.1,22h9.58V14.25h-2.6v-3h2.6V9a3.64,3.64,0,0,1,3.88-4,20.26,20.26,0,0,1,2.33.12v2.7H17.3c-1.26,0-1.5.6-1.5,1.47v1.93h3l-.39,3H15.8V22h5.1A1.1,1.1,0,0,0,22,20.9V3.1A1.1,1.1,0,0,0,20.9,2Z"></path></svg></a>
-                        </div>
-                        <div>
-                            <a href="https://twitter.com/" class="header__content-social-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="twitter"><path d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z"></path></svg></a>
-                        </div>
-                    </div>
-                    <a href="https://simplybook.me/en/" target="_blank" class="header__content-btn">Book Now</a>
-                </div>
-            </div>
-        </div>
+            <a href="#hero"><img src="./src/icons/logo.svg" alt="logo"></a>
+            <nav class="header__menu">
+                <a href="#about" class="header__menu-link" data-scroll-to>ABOUT US</a>
+                <a href="#services" class="header__menu-link" data-scroll-to>SERVICES</a>
+                <a href="#adress" class="header__menu-link" data-scroll-to>LOCATIONS</a>
+                <a href="https://simplybook.me/en/" target="_blank" class="header__menu-link" > BOOK</a>
+            </nav>
     </header>
     <main>
-        <section class="info">
-            <div class="container">
-                <div class="info-inner">
-                    <div class="info__content">
-                        <div class="info__content-title">Discover <p></p> Bavarian Shears</div>
-                        <div class="info__content-text">Step into the Styling Lounge</div>
-                        <div class="info__content-list">
-                            <a href="./services.html" class="info__content-btn content-btn-1">Explore Services</a>
-                            <a href="https://www.mytime.com/" target="_blank" class="info__content-btn content-btn-2">Book Appointment</a>
-                        </div>
+        <section id="hero" data-scroll-section>
+            <div class="loading-screen">
+                <div class="black-square"></div>
+                <div class="white-square"></div>
+            </div>
+            <h2>Shear</h2>
+            <div class="slider-container">
+                <div class="left-slide">
+                    <div class="slide small slide-9">
+                      <p>Shear Precision</p>
                     </div>
-                    <img src="./assets/images/info.png" alt="barber" class="info-image">
+                    <div class="slide slide-3">
+                      <p>Precision in Craft</p>
+                    </div>
+                    <div class="slide slide-5">
+                      <p>Shear Classic Cuts</p>
+                    </div>
+                    <div class="slide slide-7">
+                      <p>Refined Grooming Art</p>
+                    </div>
+                    <div class="slide slide-1">
+                      <p>Heritage in Hair</p>
+                    </div>
+                </div>
+                <div class="right-slide">
+                  <div class="slide small slide-2">
+                    <p>Shear Perfection</p>
+                  </div>
+                  <div class="slide small slide-4">
+                    <p>Classic Shear Skill</p>
+                  </div>
+                  <div class="slide small slide-6">
+                    <p>Shear Excellence</p>
+                  </div>
+                  <div class="slide small slide-8">
+                    <p>Crafted with Tradition</p>
+                  </div>
+                  <div class="slide slide-10">
+                    <p>Masterful Haircuts Daily</p>
+                  </div>
                 </div>
             </div>
         </section>
-        <section class="tips">
+        <section id="about" data-scroll-section>
             <div class="container">
-                <div class="tips-inner">
-                    <div class="tips__content">
-                        <div class="tips__content-number">#01</div>
-                        <div class="tips__content__block">
-                            <div class="tips__content__block-title">Quality Service</div>
-                            <div class="tips__content__block-text">Our barbers are dedicated to delivering top-notch service. We carefully listen to your preferences and provide personalized haircuts that suit your style.</div>
+                <div class="about-inner">
+                    <p><span>Welcome to SHEAR</span>, where tradition meets <span>contemporary style</span>. Our barbers are skilled artists dedicated to perfecting the craft of barbering.</p>
+                    <p><span>Our Mission</span> is to deliver a <span>personalized grooming experience</span> that reflects each client’s unique style. We believe a great haircut can transform not only your <span>appearance</span> but also your confidence.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services" data-scroll-section>
+            <div class="container">
+                <div class="services-inner">
+                    <img src="./src/icons/service.svg" alt="service">
+                    <h4>services</h4>
+                    <div class="services__content">
+                        <div class="services__block">
+                            <h5>Haircut</h5>
+                            <div class="services-text">Customized haircut with an optional hot lather finish and a straight razor neck shave, ensuring a sharp and stylish look.</div>
+                            <a href="https://simplybook.me/en/" target="_blank" class="services-btn">Starting at €40</a>
+                        </div>
+                        <div class="services__block">
+                            <h5>Skin Fade</h5>
+                            <div class="services-text">A clean fade from the skin up to the desired length on top, finished with hot lather and a neck shave. Perfect for a sleek, modern style.</div>
+                            <a href="https://simplybook.me/en/" target="_blank" class="services-btn">Starting at €40</a>
                         </div>
                     </div>
-                    <div class="tips__content">
-                        <div class="tips__content-number">#02</div>
-                        <div class="tips__content__block">
-                            <div class="tips__content__block-title">Attention to Detail</div>
-                            <div class="tips__content__block-text">Our barbershop pays attention to every detail, ensuring that you leave looking and feeling incredible. With precise haircuts and impeccable lines, our expertise is unmatched.</div>
+                    <div class="services__content">
+                        <div class="services__block">
+                            <h5>Beard Trim</h5>
+                            <div class="services-text">Professional beard trimming using scissors or clippers to define and enhance your beard's shape. Includes conditioning treatment for a well-groomed and polished look.</div>
+                            <a href="https://simplybook.me/en/" target="_blank" class="services-btn">Starting at €22</a>
                         </div>
-                    </div>
-                    <div class="tips__content">
-                        <div class="tips__content-number">#03</div>
-                        <div class="tips__content__block">
-                            <div class="tips__content__block-title">Relaxing Environment</div>
-                            <div class="tips__content__block-text">Our barbershop provides a comfortable and welcoming atmosphere. Sit back, relax, and enjoy your grooming experience in our stylish and modern salon.</div>
-                        </div>
-                    </div>
-                    <div class="tips__content">
-                        <div class="tips__content-number">#04</div>
-                        <div class="tips__content__block">
-                            <div class="tips__content__block-title">Customer Satisfaction</div>
-                            <div class="tips__content__block-text">Your happiness is our main focus. We are dedicated to surpassing your expectations and creating a memorable visit for you. Stop by today and discover what sets Bavarian Shears apart.</div>
+                        <div class="services__block">
+                            <h5>Long Cut</h5>
+                            <div class="services-text">A haircut that starts below the neck or chin, suitable for maintaining long hair or transitioning to a shorter style. Ideal for significant changes.</div>
+                            <a href="https://simplybook.me/en/" target="_blank" class="services-btn">Starting at €55</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="reviews">
+        <section id="reviews" data-scroll-section>
+            <div class="reviews-inner">
+                <div class="reviews__content">
+                    <img src="./src/images/reviews-avatar.jpg" alt="avatar">
+                    <img src="./src/icons/reviews-stars.svg" alt="5 stars">
+                    <h4>"Best haircut ever! Highly recommend Shear."</h4>
+                    <h5>John D.</h5>
+                </div>
+                <div class="reviews-image"></div>
+            </div>
+        </section>
+        <section id="adress" data-scroll-section>
             <div class="container">
-                <div class="reviews-inner">
-                    <div class="reviews-title">Customer Reviews</div>
-                    <div class="reviews-text">Customers love our grooming services and we want to let you know</div>
-                    <div class="reviews__content">
-                        <div class="reviews__block">
-                            <div class="reviews__block-text">Since getting groomed at the barbershop, my style has improved significantly.</div>
-                            <div class="reviews__block-stars"></div>
-                            <div class="reviews__block-text">Jack Sibire</div>
-                            <div class="reviews__block-info">Customer, Munich</div>
-                        </div>
-                        <div class="reviews__block">
-                            <div class="reviews__block-text">Indulge in top-notch grooming services at this highly acclaimed barbershop.</div>
-                            <div class="reviews__block-stars"></div>
-                            <div class="reviews__block-text">Adele Mouse</div>
-                            <div class="reviews__block-info">Customer, Munich</div>
-                        </div>
-                        <div class="reviews__block">
-                            <div class="reviews__block-text">When it comes to my grooming needs, this is the only place I have confidence in.</div>
-                            <div class="reviews__block-stars"></div>
-                            <div class="reviews__block-text">Ben Clock</div>
-                            <div class="reviews__block-info">Customer, Munich</div>
-                        </div>
-                    </div>
+                <div class="adress-inner">
+                    <img src="./src/icons/visit-us.svg" alt="">
+                    <p>Herrnstraße 38-40, München, Germany <br>Open: Monday - Saturday, 9 AM - 7 PM</p>
+                    <a href="#map">Find Us on Google Maps</a>
+                </div>
+            </div>
+        </section>
+        <section id="map" data-scroll-section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d665.6599341654198!2d11.581798769632737!3d48.13647059320067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75899dfbbc8b%3A0x4f73e6f983e0db5b!2zSGVycm5zdHJhw59lIDM4LTQwLCA4MDUzOSBNw7xuY2hlbiwg0JPQtdGA0LzQsNC90LjRjw!5e0!3m2!1sru!2sus!4v1721272036038!5m2!1sru!2sus" width="600" height="50" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="social" data-scroll-section>
+            <div class="container">
+                <div class="social-inner">
+                    <h4>Follow Shear</h4>
+                    <p>Stay connected with Shear Barbershop! Follow us on Facebook, Instagram, and Twitter for the latest updates, exclusive offers, and style inspiration.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/">Facebook</a>
+                        <a href="https://www.instagram.com/">Instagram</a>
+                        <a href="https://twitter.com/?lang=en">Twitter</a>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer data-scroll-section>
         <div class="container">
-            <div class="footer-inner">
-                <div class="footer__content">
-                    <div class="footer__content-title">Bavarian Shears</div>
-                    <div class="footer__content-text">Your Go-To Barbershop in Munich!</div>
-                    <div class="footer__content-text">© 2024 Vladislav Gusenov . All rights reserved.</div>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="./src/icons/logo.svg" alt="Shear Barbershop Logo">
+                    <p>Your style, our passion.</p>
                 </div>
-                <div class="footer__content">
-                    <div class="footer__content-title">FAQs</div>
-                    <nav>
-                        <ul>
-                            <li class="footer__content-text"><a href="contact.html" class="footer__content-text">Get Answers</a></li>
-                            <li class="footer__content-text"><a href="contact.html" class="footer__content-text">Contact Us</a></li>
-                            <li class="footer__content-text"><a href="contact.html" class="footer__content-text">How It Works</a></li>
-                            <li class="footer__content-text"><a href="contact.html" class="footer__content-text">Connect with Us</a></li>
-                        </ul>
-                    </nav>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><p>Phone: (123) 456-7890</p></li>
+                        <li><p>Email: info@shearbarbershop.com</p></li>
+                        <li><p>Address: 123 Barber Street, Munich, Germany</p></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h3>Business Hours</h3>
+                    <ul>
+                        <li><p>Monday - Saturday: 9 AM - 7 PM</p></li>
+                        <li><p>Sunday: Closed</p></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#book">Book Appointment</a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./src/icons/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./src/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><img src="./src/icons/twitter.svg" alt="Twitter"></a>
+                </div>
+                <p>&copy; 2024 Shear Barbershop. All rights reserved. <br> Vladislav Hushcha</p>
+            </div>
         </div>
-    </footer>
-    <script defer src="./js/script.js"></script>
+    </footer>   
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script defer src="./public/js/locomotive-scroll.min.js"></script>
+    <script defer src="./src/js/slider.js"></script>
+    <script defer src="./src/js/script.js"></script>
 </body>
 </html>
