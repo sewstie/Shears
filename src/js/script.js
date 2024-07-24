@@ -1,6 +1,7 @@
 /* Loading screen */
 
 window.onload = function() {
+
     gsap.to('.loading-screen', {
         duration: 1,
         opacity: 0,
@@ -13,11 +14,12 @@ window.onload = function() {
 
 /* Service animation */
 
-document.querySelectorAll('.services-btn').forEach(button => {
+document.querySelectorAll('.services__block').forEach(block => {
+    const button = block.querySelector('.services-btn');
     const originalText = button.textContent;
     const originalColor = window.getComputedStyle(button).color;
 
-    button.addEventListener('mouseenter', () => {
+    block.addEventListener('mouseenter', () => {
         gsap.to(button, { 
             duration: 0.3, 
             color: "#ee4037", 
@@ -26,7 +28,7 @@ document.querySelectorAll('.services-btn').forEach(button => {
         });
     });
 
-    button.addEventListener('mouseleave', () => {
+    block.addEventListener('mouseleave', () => {
         gsap.to(button, { 
             duration: 0.3, 
             color: originalColor, 

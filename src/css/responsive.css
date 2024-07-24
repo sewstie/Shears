@@ -1,0 +1,178 @@
+@media (max-width:1024px) {
+  .container{padding: 0 20px;}
+
+  .header{
+    background-color: var(--black);
+    height: 7.5vh;
+  }
+  .header a{
+    display: none;
+  }
+  .header__menu{
+    display: none;
+  }
+  .header__hamburger{
+    display: block;
+  }
+  .header h4{
+    display: block;
+  }
+
+  .loading-screen{
+    height: 100%;
+  }
+  .black-square{
+    display: none;
+  }
+  .white-square{
+    width: 100vw;
+    height: 100%;
+  }
+
+  #hero h2{
+    font-size: 25vw;
+  }
+  .slider-container{
+    display: none;
+  }
+  .slider-mobile{
+    display: block;
+  }
+  .slide p{
+    font-size: 3vw;
+    bottom: 4.5vw;
+  }
+  #services img{
+    width: 10vw;
+    margin-bottom: 1vh;
+  }
+  .services__block{
+    width: 35vw;
+    gap: 5vh;
+  }
+  .services__block h5{
+    font-size: 4vw;
+  }
+  .services__block p{
+    font-size: 2.5vw;
+  }
+  .services__block a{
+    font-size: 2.5vw;
+  }
+
+  .reviews-inner{
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .reviews-image{
+    width: 100vw;
+    height: 50vh;
+  }
+  .reviews__content{
+    width: 45%;
+    padding: 8vh 9vw;
+  }
+  .reviews__content img{
+    width: 13vw;
+  }
+  .reviews__content h4{
+    font-size: 4vw;
+  }
+  .reviews__content h5{
+    font-size: 3vw;
+  }
+
+  .adress-inner{
+    padding-block: min(7vh, 8rem);
+  }
+  .adress-inner img{
+    width: 18vw;
+  }
+  .adress-inner p{
+    font-size: 3.5vw;
+    margin-block: 2vh 4vh;
+  }
+  .adress-inner a{
+    font-size: 2.5vw;
+  }
+
+  #map{
+    height: 50vh;
+  }
+
+  .social-inner{
+    padding-block: min(7vh, 8rem);
+  }
+  .social-inner h4{
+    font-size: 6vh;
+  }
+  .social-inner p{
+    width: 65%;
+    font-size: 3vh;
+    line-height: 3.2vh;
+  }
+  .social-links{
+    gap: 5vw;
+  }
+  .social-inner a{
+    font-size: 2vh;
+  }
+
+  footer{
+    padding-block: min(2.3vh, 3.3rem);
+  }
+  .footer-top{
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .footer-logo{
+    position: relative;
+  }
+  .footer-logo img{
+    max-width: 25vw;
+  }
+  .footer-logo p{
+    font-size: 2.5vh;
+    position: absolute;
+    bottom: 2.5vh;
+  }
+  .footer-contact, .footer-hours{
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+  }
+  .footer-contact h3, .footer-hours h3{
+    font-size: 3vw;
+  }
+  .footer-contact p, .footer-hours p{
+    font-size: 2.5vw;
+  }
+  .footer-top li{
+    margin-top: 2.5vh;
+  }
+  .footer-links{
+    display: none;
+  }
+  .footer-bottom {
+    padding-bottom: min(5vh, 6rem);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1vh;
+  }
+  .footer-social {
+    margin-bottom: 2vh;
+  }
+  .footer-social{
+    gap: 7.5vw;
+  }
+  .footer-social img {
+    height: 4vh;
+  }
+  .footer-bottom p{
+    font-size: 2.5vw;
+    line-height: 2.75vw;
+  }
+}
+  
