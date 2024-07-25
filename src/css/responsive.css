@@ -95,6 +95,11 @@
     font-size: 3vw;
   }
 
+  #about p{
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+
   .adress-inner{
     padding-block: min(6.5vh, 7.5rem);
   }
