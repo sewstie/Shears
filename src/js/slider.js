@@ -23,7 +23,8 @@ if (window.innerWidth <= 1024) {
           setTimeout(() => {
             slide.style.opacity = '1';
           }, 20);
-        }, 250);
+          locomotiveScroll.update();
+        }, 500);
       }
     });
   }

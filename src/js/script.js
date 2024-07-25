@@ -71,3 +71,22 @@ anchorLinks.forEach((anchorLink) => {
         locomotiveScroll.update();
     });
 });
+
+/* mobile-menu */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.header__hamburger');
+    const slidingMenu = document.querySelector('.mobile-menu');
+    const header = document.querySelector('.header');
+  
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        slidingMenu.classList.toggle('open');
+        
+        if (hamburger.classList.contains('active')) {
+            header.style.borderBottom = '2px solid #f0f4efff';
+        } else {
+            header.style.borderBottom = 'none';
+        }
+    });
+});
