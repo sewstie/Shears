@@ -51,9 +51,11 @@ const locomotiveScroll = new LocomotiveScroll({
   multiplier: 0.7,
   smartphone: {
       smooth: true,
+      multiplier: 1,
   },
   tablet: {
       smooth: true,
+      multiplier: 1,
   },
 });
 
