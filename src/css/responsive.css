@@ -55,7 +55,7 @@
   }
   
   #services img{
-    width: 10vw;
+    width: 15vw;
     margin-bottom: 1vh;
   }
   .services__block{
@@ -96,10 +96,10 @@
   }
 
   .adress-inner{
-    padding-block: min(7vh, 8rem);
+    padding-block: min(6.5vh, 7.5rem);
   }
   .adress-inner img{
-    width: 18vw;
+    width: 20vw;
   }
   .adress-inner p{
     font-size: 3.5vw;
